@@ -3,8 +3,7 @@ defmodule Pcap do
   Parse a PCAP Next Generation (pcapng) Capture File.
   https://pcapng.github.io/pcapng/draft-ietf-opsawg-pcapng.html
   """
-  alias Pcap.Parser
-  alias Pcap.Blocks.Common
+  alias Pcap.{Blocks.Common, Parser}
 
   @block_len_bits 32
   @block_type_bytes 4
