@@ -80,7 +80,7 @@ defmodule Pcap.Server do
   end
 
   defp read_header(%Parser{file: file} = parser) when is_pid(file) do
-    # pcapng file spec: https://pcapng.github.io/pcapng/draft-ietf-opsawg-pcapng.txt
+    # pcapng file spec: https://pcapng.github.io/pcapng/draft-ietf-opsawg-pcapng.html
 
     # Attempt to read the next Block Type (32 bits) and Block Total Length (32 bits) (Total 8 bytes)
     # If the result is :eof then we have reached the end of the file.
